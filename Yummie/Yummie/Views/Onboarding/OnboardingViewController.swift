@@ -35,6 +35,8 @@ class OnboardingViewController: UIViewController {
             OnboardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best", image: UIImage(named: "slide1")!),
             OnboardingSlide(title: "Instant World-Wide Delivery", description: "Your orders will be delivered instantly irrespective of your location around the world", image: UIImage(named: "slide3")!)
         ]
+        
+        pageControl.numberOfPages = slides.count
     }
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
